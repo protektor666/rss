@@ -1,0 +1,53 @@
+FiveFilters.org: PDF Newspaper
+http://fivefilters.org/pdf-newspaper/
+CHANGELOG
+------------------------------------
+
+2.5 (2014-02-04)
+ - New: HTML output with editable content and print stylesheet (Firefox recommended for printing)
+ - New: Output parameter to choose between PDF, HTML, and PDF for download
+ - New: Text direction parameter (only for HTML output for the time being)
+ - New: PDF Letter template for US users
+ - New: Form field to specify start date (if feed items include dates)
+ - New: Config option to set PDF filename - see $options->filename
+ - New: Config option to enable/disable output caching - see $options->caching
+ - New: Config option to for whitelisting/blacklisting hosts - see $options->allowed_hosts and $options->blocked_urls
+ - Font subsetting disabled in PDF output to improve iOS and PDF.js rendering
+ - PDF is no longer generated if there are no items to include (e.g. no articles published after start date)
+ - Table showing available request parameters now shown in index.php
+ - Full-Text RSS updated to version 3.1
+ - HTML Purifier updated to version 4.6.0
+ - SimplePie updated to version 1.3.1 
+ - PHP Typography updated
+ - Humble HTTP Agent updated
+ - TCPDF fonts updated
+ - TCPDF minor update (latest version not compatibile with our modifications)
+ - Plus other minor fixes/improvements
+
+2.4 (2011-11-19)
+ - New A5 template
+ - Full-Text RSS 2.7 now bundled
+ - New config option: require_key - restrict access to those with password/key
+ - New, easier to use form for creating PDFs
+ - Autoloading of necessary files to improve performance
+ - Humble HTTP Agent now used to improve performance
+ - Auto-discovery of feeds disabled - to bring it in line with how users expect it to handle standard HTML pages
+ - Now tries to parse content in following order: 1. feed 2. OPML 3. HTML
+ - HTML Purifier updated
+ - SimplePie updated
+ - TCPDF updated
+ - Plus other minor fixes/improvements
+
+2.2 (2010-07-07)
+ - Support for PHP 5.3 (thanks Murilo!)
+ - Smaller PDF file sizes (thanks to TCPDF's font subsetting)
+ - Improved vertical spacing between HTML elements
+ - Libraries brought up to date
+ - SmartyPants replaced with PHP Typography
+ - New title font
+ - Better image handling
+ - Better page/column break handling
+ - Basic support for plugins
+
+1.0 (2009-06-29)
+ - Initial release
